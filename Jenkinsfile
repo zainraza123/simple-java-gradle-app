@@ -18,8 +18,8 @@ pipeline {
             post {
                 always {
                   step $class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: '**/build/test-results/TEST-*.xml'
-                }
-            }
+               		 }
+            	}
         }
     }
 }
